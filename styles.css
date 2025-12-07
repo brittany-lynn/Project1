@@ -270,11 +270,11 @@ h1 {
 }
 
 .header__img--wrapper {
-    width: calc(100%-40%);
+    width: 60%;
 }
 
 .header__img {
-    width: 500px;
+    width: 100%;
     height: auto;
 }
 
@@ -359,6 +359,9 @@ p {
 }
 
 .features {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
@@ -1194,23 +1197,30 @@ footer {
 
     .features {
         max-width: 768px;
+        display: flex;
+        flex-direction: column;
     }
 
     .feature {
-        width: calc(50%);
+        width: 100%;
     }
 
     .feature__row {
         padding: 32px 8px;
         margin: 0 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .feature__title {
         line-height: 1;
+        text-align: center;
     }
 
     .feature__para {
         max-width: none;
+        text-align: center;
     }
 
     .quality__description {
@@ -1271,5 +1281,55 @@ footer {
 
     footer {
         padding: 80px 32px;
+    }
+}
+
+/* Cell Phones, Small Tablets */
+
+@media (max-width: 768px) {
+    #steps .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #values .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .value {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .values__description {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .values__img {
+        width: 100%;
+        height: auto;
+        margin-top: 12px;
+    }
+
+    .testimonial__bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimnoial__buttons {
+        margin-top: 12px;
+    }
+
+    .footer__bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__copyright {
+        margin: 16px 0;
     }
 }
